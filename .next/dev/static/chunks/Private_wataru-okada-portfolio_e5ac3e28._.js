@@ -507,9 +507,11 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Private/wataru-okada-portfolio/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Private/wataru-okada-portfolio/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$hooks$2f$use$2d$canvas$2d$animation$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Private/wataru-okada-portfolio/hooks/use-canvas-animation.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Private/wataru-okada-portfolio/node_modules/next/image.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 const About = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["memo"])(_c = _s(function About() {
@@ -548,7 +550,7 @@ const About = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5d
                 className: "absolute inset-0 pointer-events-none"
             }, void 0, false, {
                 fileName: "[project]/Private/wataru-okada-portfolio/components/about.tsx",
-                lineNumber: 37,
+                lineNumber: 40,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -561,7 +563,7 @@ const About = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5d
                             children: "About Me"
                         }, void 0, false, {
                             fileName: "[project]/Private/wataru-okada-portfolio/components/about.tsx",
-                            lineNumber: 44,
+                            lineNumber: 47,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -571,22 +573,25 @@ const About = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5d
                                     className: `${isVisible ? "animate-slideInLeft delay-200" : "opacity-0"}`,
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "aspect-square rounded-2xl bg-linear-to-br from-primary/20 to-accent/20 flex items-center justify-center",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-8xl",
-                                            children: "👨‍💻"
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            src: "/2CE14424-AEF8-46C8-A0C4-8FAB69DD429D_1_105_c.jpeg",
+                                            alt: "About",
+                                            width: 500,
+                                            height: 500,
+                                            className: "rounded-2xl"
                                         }, void 0, false, {
                                             fileName: "[project]/Private/wataru-okada-portfolio/components/about.tsx",
-                                            lineNumber: 59,
+                                            lineNumber: 62,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Private/wataru-okada-portfolio/components/about.tsx",
-                                        lineNumber: 58,
+                                        lineNumber: 61,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Private/wataru-okada-portfolio/components/about.tsx",
-                                    lineNumber: 53,
+                                    lineNumber: 56,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -597,7 +602,7 @@ const About = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5d
                                             children: "I'm a passionate full-stack engineer with expertise in building modern web applications. With a strong foundation in both frontend and backend technologies, I create seamless digital experiences that users love."
                                         }, void 0, false, {
                                             fileName: "[project]/Private/wataru-okada-portfolio/components/about.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 77,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -605,7 +610,7 @@ const About = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5d
                                             children: "My approach combines clean code, thoughtful design, and performance optimization to deliver products that not only look great but work flawlessly across all devices."
                                         }, void 0, false, {
                                             fileName: "[project]/Private/wataru-okada-portfolio/components/about.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 84,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -613,36 +618,36 @@ const About = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5d
                                             children: "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community."
                                         }, void 0, false, {
                                             fileName: "[project]/Private/wataru-okada-portfolio/components/about.tsx",
-                                            lineNumber: 81,
+                                            lineNumber: 90,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Private/wataru-okada-portfolio/components/about.tsx",
-                                    lineNumber: 63,
+                                    lineNumber: 72,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Private/wataru-okada-portfolio/components/about.tsx",
-                            lineNumber: 52,
+                            lineNumber: 55,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Private/wataru-okada-portfolio/components/about.tsx",
-                    lineNumber: 43,
+                    lineNumber: 46,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Private/wataru-okada-portfolio/components/about.tsx",
-                lineNumber: 42,
+                lineNumber: 45,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Private/wataru-okada-portfolio/components/about.tsx",
-        lineNumber: 32,
+        lineNumber: 35,
         columnNumber: 5
     }, this);
 }, "XqE0TZeIL8d2P0AmAUmcbLy0nKM=", false, function() {
@@ -802,18 +807,14 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 const experiences = [
-    {
-        title: "Senior Full-Stack Engineer",
-        company: "Tech Company Inc.",
-        period: "2022 - Present",
-        description: "Leading development of scalable web applications using Next.js and TypeScript. Mentoring junior developers and establishing best practices.",
-        technologies: [
-            "Next.js",
-            "TypeScript",
-            "Node.js",
-            "PostgreSQL"
-        ]
-    },
+    // {
+    //   title: "Senior Full-Stack Engineer",
+    //   company: "Tech Company Inc.",
+    //   period: "2022 - Present",
+    //   description:
+    //     "Leading development of scalable web applications using Next.js and TypeScript. Mentoring junior developers and establishing best practices.",
+    //   technologies: ["Next.js", "TypeScript", "Node.js", "PostgreSQL"],
+    // },
     {
         title: "Frontend Engineer",
         company: "Digital Agency",
@@ -1061,8 +1062,8 @@ var _s = __turbopack_context__.k.signature();
 ;
 const projects = [
     {
-        title: "E-Commerce Platform",
-        description: "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
+        title: "To-Do App",
+        description: "A to-do app with a modern design and a responsive layout.",
         image: "/modern-ecommerce-website.jpg",
         technologies: [
             "Next.js",
@@ -1070,12 +1071,12 @@ const projects = [
             "Stripe",
             "PostgreSQL"
         ],
-        github: "https://github.com",
-        demo: "https://demo.com"
+        github: "https://github.com/WataTechJP/To-Do-App",
+        demo: "https://to-do-app-wattech.onrender.com"
     },
     {
-        title: "Task Management App",
-        description: "Real-time collaborative task management application with team features and progress tracking.",
+        title: "Blog App",
+        description: "A blog application with a modern design and a responsive layout.",
         image: "/task-management-dashboard.jpg",
         technologies: [
             "React",
@@ -1083,12 +1084,12 @@ const projects = [
             "Socket.io",
             "MongoDB"
         ],
-        github: "https://github.com",
-        demo: "https://demo.com"
+        github: "https://github.com/WataTechJP/Blog-App",
+        demo: "https://blogapp-wattech.web.app"
     },
     {
-        title: "Analytics Dashboard",
-        description: "Data visualization dashboard with real-time metrics, custom reports, and export functionality.",
+        title: "Photographer Portfolio",
+        description: "A photographer portfolio with a modern design and a responsive layout.",
         image: "/analytics-dashboard-charts.jpg",
         technologies: [
             "Next.js",
@@ -1096,8 +1097,21 @@ const projects = [
             "Python",
             "FastAPI"
         ],
-        github: "https://github.com",
-        demo: "https://demo.com"
+        github: "https://github.com/WataTechJP/yuya-sudo-photographer-website",
+        demo: "https://yuya-photography-portfolio.vercel.app/"
+    },
+    {
+        title: "Horse Racing App",
+        description: "A Japanese horse racing app with a modern design and a responsive layout.",
+        image: "/analytics-dashboard-charts.jpg",
+        technologies: [
+            "Next.js",
+            "D3.js",
+            "Python",
+            "FastAPI"
+        ],
+        github: "https://github.com/WataTechJP/Keiba-RaceGuess",
+        demo: "https://yuya-photography-portfolio.vercel.app/"
     }
 ];
 const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["memo"])(_c = _s(function Projects() {
@@ -1136,7 +1150,7 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                 className: "absolute inset-0 pointer-events-none"
             }, void 0, false, {
                 fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                lineNumber: 71,
+                lineNumber: 79,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1149,7 +1163,7 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                             children: "Featured Projects"
                         }, void 0, false, {
                             fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                            lineNumber: 78,
+                            lineNumber: 86,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1158,10 +1172,10 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                                     className: `overflow-hidden group transition-all duration-500 hover:shadow-xl hover:shadow-primary/20 hover-tilt relative ${isVisible ? `animate-scaleIn delay-${(index + 2) * 100}` : "opacity-0"}`,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent opacity-0 group-hover:opacity-20 transition-opacity duration-500 animate-gradient"
+                                            className: "absolute inset-0 bg-linear-to-r from-primary via-secondary to-accent opacity-0 group-hover:opacity-20 transition-opacity duration-500 animate-gradient"
                                         }, void 0, false, {
                                             fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                            lineNumber: 96,
+                                            lineNumber: 104,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1174,20 +1188,20 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                                                     className: "object-cover transition-all duration-500 group-hover:scale-110 group-hover:rotate-2"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                                    lineNumber: 99,
+                                                    lineNumber: 107,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shimmer"
+                                                    className: "absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shimmer"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                                    lineNumber: 105,
+                                                    lineNumber: 113,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                            lineNumber: 98,
+                                            lineNumber: 106,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1198,7 +1212,7 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                                                     children: project.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                                    lineNumber: 109,
+                                                    lineNumber: 117,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1206,7 +1220,7 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                                                     children: project.description
                                                 }, void 0, false, {
                                                     fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                                    lineNumber: 112,
+                                                    lineNumber: 120,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1216,12 +1230,12 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                                                             children: tech
                                                         }, tech, false, {
                                                             fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                                            lineNumber: 118,
+                                                            lineNumber: 126,
                                                             columnNumber: 23
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                                    lineNumber: 116,
+                                                    lineNumber: 124,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1242,19 +1256,19 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                                                                         className: "mr-2"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                                                        lineNumber: 139,
+                                                                        lineNumber: 147,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     "Code"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                                                lineNumber: 134,
+                                                                lineNumber: 142,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                                            lineNumber: 128,
+                                                            lineNumber: 136,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Private$2f$wataru$2d$okada$2d$portfolio$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1271,59 +1285,59 @@ const Projects = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project
                                                                         className: "mr-2"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                                                        lineNumber: 149,
+                                                                        lineNumber: 157,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     "Demo"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                                                lineNumber: 144,
+                                                                lineNumber: 152,
                                                                 columnNumber: 23
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                                            lineNumber: 143,
+                                                            lineNumber: 151,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                                    lineNumber: 127,
+                                                    lineNumber: 135,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                            lineNumber: 108,
+                                            lineNumber: 116,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                                    lineNumber: 88,
+                                    lineNumber: 96,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                            lineNumber: 86,
+                            lineNumber: 94,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                    lineNumber: 77,
+                    lineNumber: 85,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-                lineNumber: 76,
+                lineNumber: 84,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Private/wataru-okada-portfolio/components/projects.tsx",
-        lineNumber: 66,
+        lineNumber: 74,
         columnNumber: 5
     }, this);
 }, "XqE0TZeIL8d2P0AmAUmcbLy0nKM=", false, function() {
