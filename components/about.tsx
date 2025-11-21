@@ -181,7 +181,7 @@ export const About = memo(function About() {
                   <h4 className="font-bold text-lg">Favorites</h4>
                   <div className="flex flex-wrap gap-2 justify-center">
                     <span className="px-3 py-1 text-sm bg-accent/10 text-accent rounded-full">
-                      コーヒー
+                      Shohei Ohtani
                     </span>
                     <span className="px-3 py-1 text-sm bg-accent/10 text-accent rounded-full">
                       映画
