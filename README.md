@@ -402,4 +402,3 @@ npm run dev
 	•	v0.dev コンポーネント
 
 ⸻
-# wataru-okada-portfolio
