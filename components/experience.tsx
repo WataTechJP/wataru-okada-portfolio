@@ -6,14 +6,14 @@ import { Briefcase } from "lucide-react";
 import { useCanvasAnimation } from "@/hooks/use-canvas-animation";
 
 const experiences = [
-  {
-    title: "Senior Full-Stack Engineer",
-    company: "Tech Company Inc.",
-    period: "2022 - Present",
-    description:
-      "Leading development of scalable web applications using Next.js and TypeScript. Mentoring junior developers and establishing best practices.",
-    technologies: ["Next.js", "TypeScript", "Node.js", "PostgreSQL"],
-  },
+  // {
+  //   title: "Senior Full-Stack Engineer",
+  //   company: "Tech Company Inc.",
+  //   period: "2022 - Present",
+  //   description:
+  //     "Leading development of scalable web applications using Next.js and TypeScript. Mentoring junior developers and establishing best practices.",
+  //   technologies: ["Next.js", "TypeScript", "Node.js", "PostgreSQL"],
+  // },
   {
     title: "Frontend Engineer",
     company: "Digital Agency",

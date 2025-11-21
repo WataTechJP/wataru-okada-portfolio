@@ -9,31 +9,39 @@ import { useCanvasAnimation } from "@/hooks/use-canvas-animation";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description:
-      "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
+    title: "To-Do App",
+    description: "A to-do app with a modern design and a responsive layout.",
     image: "/modern-ecommerce-website.jpg",
     technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/WataTechJP/To-Do-App",
+    demo: "https://to-do-app-wattech.onrender.com",
   },
   {
-    title: "Task Management App",
+    title: "Blog App",
     description:
-      "Real-time collaborative task management application with team features and progress tracking.",
+      "A blog application with a modern design and a responsive layout.",
     image: "/task-management-dashboard.jpg",
     technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/WataTechJP/Blog-App",
+    demo: "https://blogapp-wattech.web.app",
   },
   {
-    title: "Analytics Dashboard",
+    title: "Photographer Portfolio",
     description:
-      "Data visualization dashboard with real-time metrics, custom reports, and export functionality.",
+      "A photographer portfolio with a modern design and a responsive layout.",
     image: "/analytics-dashboard-charts.jpg",
     technologies: ["Next.js", "D3.js", "Python", "FastAPI"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/WataTechJP/yuya-sudo-photographer-website",
+    demo: "https://yuya-photography-portfolio.vercel.app/",
+  },
+  {
+    title: "Horse Racing App",
+    description:
+      "A Japanese horse racing app with a modern design and a responsive layout.",
+    image: "/analytics-dashboard-charts.jpg",
+    technologies: ["Next.js", "D3.js", "Python", "FastAPI"],
+    github: "https://github.com/WataTechJP/Keiba-RaceGuess",
+    demo: "https://yuya-photography-portfolio.vercel.app/",
   },
 ];
 
@@ -93,7 +101,7 @@ export const Projects = memo(function Projects() {
                     : "opacity-0"
                 }`}
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-accent opacity-0 group-hover:opacity-20 transition-opacity duration-500 animate-gradient" />
+                <div className="absolute inset-0 bg-linear-to-r from-primary via-secondary to-accent opacity-0 group-hover:opacity-20 transition-opacity duration-500 animate-gradient" />
 
                 <div className="relative aspect-video overflow-hidden bg-muted">
                   <Image
@@ -102,7 +110,7 @@ export const Projects = memo(function Projects() {
                     fill
                     className="object-cover transition-all duration-500 group-hover:scale-110 group-hover:rotate-2"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shimmer" />
+                  <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shimmer" />
                 </div>
 
                 <div className="p-6 relative z-10">
