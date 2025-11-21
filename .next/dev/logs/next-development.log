@@ -1,0 +1,47 @@
+[00:00:00.758] Server  LOG      ✓ Ready in 500ms
+[00:00:10.296] Browser WARN    Image with src "/task-management-dashboard.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:10.296] Browser WARN    Image with src "/analytics-dashboard-charts.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:10.296] Browser WARN    Image with src "/modern-ecommerce-website.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:58.048] Server  LOG      ✓ Compiled in 119ms
+[00:02:10.635] Server  LOG      ✓ Compiled in 118ms
+[00:02:25.864] Server  LOG      ✓ Compiled in 183ms
+[00:02:50.210] Server  LOG      ✓ Compiled in 123ms
+[00:03:22.250] Server  LOG      ✓ Compiled in 79ms
+[00:03:27.096] Server  LOG      ✓ Compiled in 119ms
+[00:03:45.810] Server  LOG      ✓ Compiled in 118ms
+[00:04:25.234] Server  LOG      ✓ Compiled in 74ms
+[00:04:31.797] Server  LOG      ✓ Compiled in 31ms
+[00:04:41.765] Server  LOG      ✓ Compiled in 75ms
+[00:05:41.858] Server  LOG      ✓ Compiled in 173ms
+[00:06:09.434] Server  LOG      ✓ Compiled in 198ms
+[00:07:28.732] Server  LOG      ✓ Compiled in 102ms
+[00:07:32.470] Server  LOG      ✓ Compiled in 43ms
+[00:07:37.036] Server  LOG      ✓ Compiled in 85ms
+[00:08:44.714] Server  LOG      ✓ Compiled in 629ms
+[00:08:44.885] Browser ERROR   ./Private/wataru-okada-portfolio/components/skills.tsx:26:10
+Parsing ecmascript source code failed
+  24 |
+  25 | const techIcons: { [key: string]: any } = {
+> 26 |   React: ,
+     |          ^
+  27 |   "Next.js": Triangle,
+  28 |   TypeScript: FileCode,
+  29 |   "Tailwind CSS": Wind,
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./Private/wataru-okada-portfolio/components/skills.tsx
+    ./Private/wataru-okada-portfolio/app/page.tsx
+[00:08:45.707] Server  LOG      ✓ Compiled in 134ms
+[00:08:48.368] Server  ERROR    ⨯ ReferenceError: ReactLogo is not defined
+[00:08:49.731] Browser ERROR   uncaughtError: ReferenceError: ReactLogo is not defined
+[00:09:03.392] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:03.416] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./Private/wataru-okada-portfolio/components/skills.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:09:03.451] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:03.462] Server  LOG      ✓ Compiled in 84ms
+[00:09:12.402] Browser WARN    Image with src "/modern-ecommerce-website.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:09:12.402] Browser WARN    Image with src "/analytics-dashboard-charts.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:09:12.402] Browser WARN    Image with src "/task-management-dashboard.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:10:51.544] Server  LOG      ✓ Compiled in 102ms
