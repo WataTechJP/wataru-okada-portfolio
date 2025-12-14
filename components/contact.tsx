@@ -54,7 +54,7 @@ export const Contact = memo(function Contact() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto">
           <h2
-            className={`text-4xl md:text-5xl font-bold mb-16 text-center neon-glow-pink animate-flicker ${
+            className={`text-4xl md:text-5xl font-bold mb-16 text-center neon-glow-cyan animate-flicker ${
               isVisible ? "animate-fadeInUp" : "opacity-0"
             }`}
           >

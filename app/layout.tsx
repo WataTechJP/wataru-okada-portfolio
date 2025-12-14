@@ -1,6 +1,7 @@
 import type React from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { AppLocaleProvider } from "@/i18n/LocalProvider";
 import "./globals.css";
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -13,6 +14,8 @@ export const metadata: Metadata = {
   keywords: [
     "Full-Stack Engineer",
     "Web Developer",
+    "Front Web Development",
+    "Engineer",
     "Next.js",
     "TypeScript",
     "React",
@@ -23,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-domain.com",
+    url: "https://wataru-okada-portfolio.vercel.app/",
     title: "Wataru Okada - Full-Stack Engineer",
     description: "Portfolio of Wataru Okada, a passionate full-stack engineer",
     siteName: "Wataru Okada Portfolio",
@@ -60,7 +63,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`font-sans antialiased`}>{children}</body>
+      <body className={`font-sans antialiased`}>
+        <AppLocaleProvider>{children}</AppLocaleProvider>
+      </body>
     </html>
   );
 }

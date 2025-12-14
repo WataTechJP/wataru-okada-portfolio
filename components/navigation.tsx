@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+
 // throttle関数
 function throttle<T extends (...args: any[]) => any>(
   func: T,
@@ -67,6 +69,7 @@ export const Navigation = memo(function Navigation() {
                 {item.label}
               </Link>
             ))}
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
@@ -94,6 +97,9 @@ export const Navigation = memo(function Navigation() {
                   {item.label}
                 </Link>
               ))}
+            </div>
+            <div className="flex justify-center px-4 py-4">
+              <LanguageSwitcher />
             </div>
           </div>
         )}
