@@ -15,10 +15,14 @@ import {
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
+import { useLocale, t } from "@/i18n/LocalProvider";
+
 export const About = memo(function About() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  const { locale } = useLocale();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -54,7 +58,7 @@ export const About = memo(function About() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <h2
-            className={`text-4xl md:text-5xl font-bold mb-12 text-center neon-glow-pink animate-flicker ${
+            className={`text-4xl md:text-5xl font-bold mb-12 text-center neon-glow-cyan animate-flicker ${
               isVisible ? "animate-fadeInUp" : "opacity-0"
             }`}
           >
@@ -84,31 +88,24 @@ export const About = memo(function About() {
               }`}
             >
               <p className="text-lg leading-relaxed text-muted-foreground">
-                I'm a passionate full-stack engineer with expertise in building
-                modern web applications. With a strong foundation in both
-                frontend and backend technologies, I create seamless digital
-                experiences that users love.
+                {t("aboutDescription1", locale)}
               </p>
 
               <p className="text-lg leading-relaxed text-muted-foreground">
-                My approach combines clean code, thoughtful design, and
-                performance optimization to deliver products that not only look
-                great but work flawlessly across all devices.
+                {t("aboutDescription2", locale)}
               </p>
 
               <p className="text-lg leading-relaxed text-muted-foreground">
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                {t("aboutDescription3", locale)}
               </p>
-              <p className="text-2xl leading-relaxed text-muted-foreground">
-                - Wataru Okada
+              <p className="text-2xl text-center md:text-left leading-relaxed text-muted-foreground">
+                {t("aboutDescriptionName", locale)}
               </p>
             </div>
           </div>
 
           {/* Hobbies & Interests Section */}
-          <div className="mt-16">
+          <div className="mt-24">
             <h3
               className={`text-2xl md:text-3xl font-bold mb-8 text-center neon-glow-cyan ${
                 isVisible ? "animate-fadeInUp delay-400" : "opacity-0"
@@ -128,7 +125,9 @@ export const About = memo(function About() {
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <Gamepad2 className="text-primary" size={24} />
                   </div>
-                  <h4 className="font-bold text-lg">Hobbies</h4>
+                  <h4 className="font-bold text-lg">
+                    {t("aboutHobbies", locale)}
+                  </h4>
                   <div className="flex flex-wrap gap-2 justify-center">
                     <span className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full">
                       Music

@@ -11,7 +11,7 @@ const projects = [
   {
     title: "To-Do App",
     description: "A to-do app with a modern design and a responsive layout.",
-    image: "/modern-ecommerce-website.jpg",
+    image: "/to-do-list.png",
     technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
     github: "https://github.com/WataTechJP/To-Do-App",
     demo: "https://to-do-app-wattech.onrender.com",
