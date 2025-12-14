@@ -5,12 +5,16 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { useCanvasAnimation } from "@/hooks/use-canvas-animation";
 
+import { useLocale, t } from "@/i18n/LocalProvider";
+
 export const Hero = memo(function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const [displayedText, setDisplayedText] = useState("");
   const [isVisible, setIsVisible] = useState(true); // Heroは常に表示
   const fullText = "Full-Stack Engineer";
+
+  const { locale } = useLocale();
 
   useEffect(() => {
     let index = 0;
@@ -51,18 +55,16 @@ export const Hero = memo(function Hero() {
             <span className="animate-pulse">|</span>
           </p>
 
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed animate-fadeInUp delay-300">
-            Building exceptional web experiences with modern technologies.
-            Passionate about creating elegant, performant, and accessible
-            applications.
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed animate-fadeInUp delay-300 whitespace-pre-line">
+            {t("heroDescription", locale)}
           </p>
 
           <div className="flex items-center justify-center gap-4 mb-12 animate-fadeInUp delay-400">
             <Button size="lg" asChild className="animate-pulse-glow">
-              <a href="#contact">Get In Touch</a>
+              <a href="#contact">{t("heroContact", locale)}</a>
             </Button>
             <Button size="lg" variant="outline" asChild className="hover-tilt">
-              <a href="#projects">View Projects</a>
+              <a href="#projects">{t("heroProjects", locale)}</a>
             </Button>
           </div>
 

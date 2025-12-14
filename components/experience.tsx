@@ -4,31 +4,37 @@ import { useEffect, useRef, useState, memo } from "react";
 import { Card } from "@/components/ui/card";
 import { Briefcase } from "lucide-react";
 import { useCanvasAnimation } from "@/hooks/use-canvas-animation";
+import Link from "next/link";
 
 const experiences = [
-  // {
-  //   title: "Senior Full-Stack Engineer",
-  //   company: "Tech Company Inc.",
-  //   period: "2022 - Present",
-  //   description:
-  //     "Leading development of scalable web applications using Next.js and TypeScript. Mentoring junior developers and establishing best practices.",
-  //   technologies: ["Next.js", "TypeScript", "Node.js", "PostgreSQL"],
-  // },
   {
-    title: "Frontend Engineer",
-    company: "Digital Agency",
-    period: "2020 - 2022",
+    title: "Frontend Developer Intern",
+    company: "BLOOM CONSULTING Inc.",
+    office: "Vancouver, Canada",
+    url: "https://www.bloom-abroad.com/about/",
+    period: "2025 - Present",
     description:
-      "Built responsive web applications and e-commerce platforms. Collaborated with design teams to implement pixel-perfect interfaces.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "GraphQL"],
+      "Developed responsive and accessible web interfaces using modern frontend technologies, integrating APIs and supporting deployments on Vercel and AWS. The company provides comprehensive relocation support for Japanese speakers in Vancouver, including housing assistance, community engagement, and all local resources offered in Japanese.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS",
+      "MySQL",
+      "Strapi",
+      "Vercel",
+      "GitHub",
+    ],
   },
   {
-    title: "Junior Developer",
-    company: "Startup Co.",
-    period: "2019 - 2020",
+    title: "Frontend Developer Intern",
+    company: "OpenHeart Inc.",
+    office: "Tokyo, Japan",
+    url: "https://openheart.co.jp/",
+    period: "2025 - Present",
     description:
-      "Contributed to MVP development and learned full-stack development practices. Participated in agile development cycles.",
-    technologies: ["JavaScript", "React", "Express", "MongoDB"],
+      "Contributed to the development of TAVIO, a platform that makes 3D capture more accessible by combining advanced technology with user-friendly design. I implemented a modern React/Next.js architecture, built reusable and responsive UI components, and integrated Supabase for real-time data, authentication, and secure 3D file storage, while supporting GitHub-based version control and CI/CD workflows.",
+    technologies: ["React", "TypeScript", "Next.js", "GitHub", "Supabase"],
   },
 ];
 
@@ -71,7 +77,7 @@ export const Experience = memo(function Experience() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <h2
-            className={`text-4xl md:text-5xl font-bold mb-16 text-center neon-glow-green animate-flicker ${
+            className={`text-4xl md:text-5xl font-bold mb-16 text-center neon-glow-cyan animate-flicker ${
               isVisible ? "animate-fadeInUp" : "opacity-0"
             }`}
           >
@@ -82,14 +88,19 @@ export const Experience = memo(function Experience() {
             {experiences.map((exp, index) => (
               <Card
                 key={index}
-                className={`p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${
-                  isVisible
-                    ? `animate-fadeInUp delay-${(index + 2) * 100}`
-                    : "opacity-0"
+                className={`p-6 md:p-8 overflow-hidden group relative transition-all duration-500 hover:shadow-xl hover:shadow-primary/20 hover:-translate-y-1 hover:scale-[1.01] ${
+                  isVisible ? `animate-fadeInUp` : "opacity-0 translate-y-4"
                 }`}
+                style={{
+                  animationDelay: `${(index + 2) * 100}ms`,
+                }}
               >
-                <div className="flex flex-col md:flex-row md:items-start gap-4">
-                  <div className="flex-shrink-0">
+                <div className="absolute inset-0 bg-linear-to-r from-primary via-secondary to-accent opacity-0 group-hover:opacity-20 transition-opacity duration-500 animate-gradient" />
+                <Link
+                  href={exp.url}
+                  className="flex flex-col md:flex-row md:items-start gap-4"
+                >
+                  <div className="shrink-0">
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                       <Briefcase className="text-primary" size={24} />
                     </div>
@@ -104,7 +115,10 @@ export const Experience = memo(function Experience() {
                     </div>
 
                     <p className="text-primary font-medium mb-3">
-                      {exp.company}
+                      {exp.company} <br className="block md:hidden" />
+                      <span className="text-sm text-white italic md:ml-2">
+                        {exp.office}
+                      </span>
                     </p>
                     <p className="text-muted-foreground leading-relaxed mb-4">
                       {exp.description}
@@ -121,7 +135,7 @@ export const Experience = memo(function Experience() {
                       ))}
                     </div>
                   </div>
-                </div>
+                </Link>
               </Card>
             ))}
           </div>
