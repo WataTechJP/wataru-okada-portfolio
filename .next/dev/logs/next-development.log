@@ -1,4 +1,10 @@
-[00:00:01.633] Server  LOG      ✓ Ready in 1430ms
-[00:00:11.246] Browser WARN    Image with src "/task-management-dashboard.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:11.246] Browser WARN    Image with src "/analytics-dashboard-charts.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:11.622] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/to-do-list.png" "received" null
+[00:00:01.526] Server  LOG      ✓ Ready in 1322ms
+[00:00:06.031] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.339] Browser WARN    Image with src "/2CE14424-AEF8-46C8-A0C4-8FAB69DD429D_1_105_c.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:06.480] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.805] Browser WARN    Image with src "/2CE14424-AEF8-46C8-A0C4-8FAB69DD429D_1_105_c.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:06.953] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.102] Browser WARN    Image with src "/2CE14424-AEF8-46C8-A0C4-8FAB69DD429D_1_105_c.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:12.509] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/to-do-list.png" "received" null
+[00:00:27.825] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:28.039] Browser WARN    Image with src "/2CE14424-AEF8-46C8-A0C4-8FAB69DD429D_1_105_c.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

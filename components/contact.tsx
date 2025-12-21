@@ -1,33 +1,38 @@
 "use client";
 
-import type React from "react";
-
 import { useEffect, useRef, useState, memo } from "react";
+import type { ReactElement, FormEvent } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone, Instagram, MessageCircle } from "lucide-react";
+import { Mail, MapPin, Instagram, MessageCircle } from "lucide-react";
 import { useCanvasAnimation } from "@/hooks/use-canvas-animation";
 
-export const Contact = memo(function Contact() {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+export const Contact = memo(function Contact(): ReactElement {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
+    const currentSection = sectionRef.current;
+    if (!currentSection) return;
+
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsVisible(entry.isIntersecting);
+      (entries: IntersectionObserverEntry[]): void => {
+        const [entry] = entries;
+        if (entry) {
+          setIsVisible(entry.isIntersecting);
+        }
       },
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
+    observer.observe(currentSection);
 
-    return () => observer.disconnect();
+    return (): void => {
+      observer.disconnect();
+    };
   }, []);
 
   useCanvasAnimation(canvasRef, sectionRef, {
@@ -35,7 +40,7 @@ export const Contact = memo(function Contact() {
     isVisible,
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     alert("Form submitted! (This is a demo)");
   };
