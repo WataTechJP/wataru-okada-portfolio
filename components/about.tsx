@@ -1,42 +1,39 @@
 "use client";
 
 import { useEffect, useRef, useState, memo } from "react";
+import type { ReactElement } from "react";
 import { useCanvasAnimation } from "@/hooks/use-canvas-animation";
 import Image from "next/image";
-import {
-  Heart,
-  Music,
-  Gamepad2,
-  Camera,
-  Coffee,
-  Code2,
-  BookOpen,
-  Film,
-} from "lucide-react";
-import { Card } from "@/components/ui/card";
-
+import { Heart, Gamepad2, Code2, BookOpen } from "lucide-react";
 import { useLocale, t } from "@/i18n/LocalProvider";
+import { HobbyCard } from "@/components/ui/hobby-card";
 
-export const About = memo(function About() {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+export const About = memo(function About(): ReactElement {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   const { locale } = useLocale();
 
   useEffect(() => {
+    const currentSection = sectionRef.current;
+    if (!currentSection) return;
+
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsVisible(entry.isIntersecting);
+      (entries: IntersectionObserverEntry[]): void => {
+        const [entry] = entries;
+        if (entry) {
+          setIsVisible(entry.isIntersecting);
+        }
       },
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
+    observer.observe(currentSection);
 
-    return () => observer.disconnect();
+    return (): void => {
+      observer.disconnect();
+    };
   }, []);
 
   useCanvasAnimation(canvasRef, sectionRef, {
@@ -115,104 +112,38 @@ export const About = memo(function About() {
             </h3>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {/* Hobbies */}
-              <Card
-                className={`p-6 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover-tilt ${
-                  isVisible ? "animate-scaleIn delay-500" : "opacity-0"
-                }`}
-              >
-                <div className="flex flex-col items-center text-center space-y-3">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Gamepad2 className="text-primary" size={24} />
-                  </div>
-                  <h4 className="font-bold text-lg">
-                    {t("aboutHobbies", locale)}
-                  </h4>
-                  <div className="flex flex-wrap gap-2 justify-center">
-                    <span className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full">
-                      Music
-                    </span>
-                    <span className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full">
-                      Baseball
-                    </span>
-                    <span className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full">
-                      YouTube
-                    </span>
-                    <span className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full">
-                      Sauna
-                    </span>
-                  </div>
-                </div>
-              </Card>
-
-              {/* Special Skills */}
-              <Card
-                className={`p-6 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20 hover-tilt ${
-                  isVisible ? "animate-scaleIn delay-600" : "opacity-0"
-                }`}
-              >
-                <div className="flex flex-col items-center text-center space-y-3">
-                  <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center">
-                    <Code2 className="text-secondary" size={24} />
-                  </div>
-                  <h4 className="font-bold text-lg">Special Skills</h4>
-                  <div className="flex flex-wrap gap-2 justify-center">
-                    <span className="px-3 py-1 text-sm bg-secondary/10 text-secondary rounded-full">
-                      アルゴリズム
-                    </span>
-                    <span className="px-3 py-1 text-sm bg-secondary/10 text-secondary rounded-full">
-                      問題解決
-                    </span>
-                  </div>
-                </div>
-              </Card>
-
-              {/* Favorite Things */}
-              <Card
-                className={`p-6 transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 hover-tilt ${
-                  isVisible ? "animate-scaleIn delay-700" : "opacity-0"
-                }`}
-              >
-                <div className="flex flex-col items-center text-center space-y-3">
-                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
-                    <Heart className="text-accent" size={24} />
-                  </div>
-                  <h4 className="font-bold text-lg">Favorites</h4>
-                  <div className="flex flex-wrap gap-2 justify-center">
-                    <span className="px-3 py-1 text-sm bg-accent/10 text-accent rounded-full">
-                      Shohei Ohtani
-                    </span>
-                    <span className="px-3 py-1 text-sm bg-accent/10 text-accent rounded-full">
-                      映画
-                    </span>
-                    <span className="px-3 py-1 text-sm bg-accent/10 text-accent rounded-full">
-                      写真
-                    </span>
-                  </div>
-                </div>
-              </Card>
-
-              {/* Interests */}
-              <Card
-                className={`p-6 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover-tilt ${
-                  isVisible ? "animate-scaleIn delay-800" : "opacity-0"
-                }`}
-              >
-                <div className="flex flex-col items-center text-center space-y-3">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <BookOpen className="text-primary" size={24} />
-                  </div>
-                  <h4 className="font-bold text-lg">Interests</h4>
-                  <div className="flex flex-wrap gap-2 justify-center">
-                    <span className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full">
-                      テクノロジー
-                    </span>
-                    <span className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full">
-                      デザイン
-                    </span>
-                  </div>
-                </div>
-              </Card>
+              <HobbyCard
+                icon={Gamepad2}
+                title={t("aboutHobbies", locale)}
+                items={["Music", "Baseball", "YouTube", "Sauna"] as const}
+                color="primary"
+                isVisible={isVisible}
+                delay="delay-500"
+              />
+              <HobbyCard
+                icon={Code2}
+                title="Special Skills"
+                items={["アルゴリズム", "問題解決"] as const}
+                color="secondary"
+                isVisible={isVisible}
+                delay="delay-600"
+              />
+              <HobbyCard
+                icon={Heart}
+                title="Favorites"
+                items={["Shohei Ohtani", "映画", "写真"] as const}
+                color="accent"
+                isVisible={isVisible}
+                delay="delay-700"
+              />
+              <HobbyCard
+                icon={BookOpen}
+                title="Interests"
+                items={["テクノロジー", "デザイン"] as const}
+                color="primary"
+                isVisible={isVisible}
+                delay="delay-800"
+              />
             </div>
           </div>
         </div>
