@@ -1,10 +1,30 @@
-[00:00:01.526] Server  LOG      ✓ Ready in 1322ms
-[00:00:06.031] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:06.339] Browser WARN    Image with src "/2CE14424-AEF8-46C8-A0C4-8FAB69DD429D_1_105_c.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:06.480] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:06.805] Browser WARN    Image with src "/2CE14424-AEF8-46C8-A0C4-8FAB69DD429D_1_105_c.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:06.953] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:07.102] Browser WARN    Image with src "/2CE14424-AEF8-46C8-A0C4-8FAB69DD429D_1_105_c.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:12.509] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/to-do-list.png" "received" null
-[00:00:27.825] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:28.039] Browser WARN    Image with src "/2CE14424-AEF8-46C8-A0C4-8FAB69DD429D_1_105_c.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:00.874] Server  LOG      ✓ Ready in 669ms
+[00:00:08.348] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.571] Browser WARN    Image with src "/task-management-dashboard.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:08.571] Browser WARN    Image with src "/analytics-dashboard-charts.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:08.842] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/to-do-list.png" "received" null
+[00:00:18.412] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/to-do-list.png" "received" null
+[00:01:13.926] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:14.056] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/to-do-list.png" "received" null
+[00:01:14.204] Browser WARN    Image with src "/to-do-list.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:14.204] Browser WARN    Image with src "/task-management-dashboard.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:14.204] Browser WARN    Image with src "/analytics-dashboard-charts.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:14.619] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:14.657] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/to-do-list.png" "received" null
+[00:01:14.803] Browser WARN    Image with src "/to-do-list.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:14.803] Browser WARN    Image with src "/task-management-dashboard.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:14.803] Browser WARN    Image with src "/analytics-dashboard-charts.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:15.168] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:15.176] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/to-do-list.png" "received" null
+[00:01:15.337] Browser WARN    Image with src "/to-do-list.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:15.337] Browser WARN    Image with src "/task-management-dashboard.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:15.337] Browser WARN    Image with src "/analytics-dashboard-charts.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:01:26.389] Server  LOG      ✓ Compiled in 725ms
+[00:01:26.639] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:26.778] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/to-do-list.png" "received" null
+[00:01:26.803] Browser WARN    Image with src "/task-management-dashboard.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:30.810] Browser WARN    Image with src "/analytics-dashboard-charts.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:14.665] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:19.081] Browser WARN    Image with src "/task-management-dashboard.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:19.382] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/to-do-list.png" "received" null
+[00:02:19.546] Browser WARN    Image with src "/analytics-dashboard-charts.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
