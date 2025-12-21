@@ -28,3 +28,4 @@
 [00:02:19.081] Browser WARN    Image with src "/task-management-dashboard.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 [00:02:19.382] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/to-do-list.png" "received" null
 [00:02:19.546] Browser WARN    Image with src "/analytics-dashboard-charts.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:13:57.572] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/to-do-list.png" "received" null
